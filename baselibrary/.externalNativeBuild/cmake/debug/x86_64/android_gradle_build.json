@@ -1,0 +1,41 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/duanyikang/AndroidStudioProjects/yichuizi/baselibrary/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/Users/duanyikang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/duanyikang/AndroidStudioProjects/yichuizi/baselibrary/.externalNativeBuild/cmake/debug/x86_64 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"pkginfo-lib-Debug-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "pkginfo-lib",
+			"buildCommand" : "/Users/duanyikang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/duanyikang/AndroidStudioProjects/yichuizi/baselibrary/.externalNativeBuild/cmake/debug/x86_64 --target pkginfo-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/duanyikang/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/duanyikang/Library/Android/sdk/ndk-bundle/sysroot  -Dpkginfo_lib_EXPORTS -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sources/android/support/include -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/baselibrary/src/main/cpp/pkginfo.cpp",
+					"workingDirectory" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/baselibrary/.externalNativeBuild/cmake/debug/x86_64"
+				}
+			],
+			"output" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/baselibrary/build/intermediates/cmake/debug/obj/x86_64/libpkginfo-lib.so",
+			"toolchain" : "269595090903653908"
+		}
+	},
+	"toolchains" : 
+	{
+		"269595090903653908" : 
+		{
+			"cCompilerExecutable" : "/Users/duanyikang/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/duanyikang/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}

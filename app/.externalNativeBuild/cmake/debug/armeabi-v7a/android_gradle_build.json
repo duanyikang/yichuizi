@@ -1,0 +1,86 @@
+
+{
+	"buildFiles" : [ "/Users/duanyikang/AndroidStudioProjects/yichuizi/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"/Users/duanyikang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/duanyikang/AndroidStudioProjects/yichuizi/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"avcodec-57-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avcodec-57",
+			"buildType" : "debug",
+			"output" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/app/src/main/jniLibs/armeabi-v7a/libavcodec-57.so",
+			"toolchain" : "269595090903653908"
+		},
+		"avfilter-6-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avfilter-6",
+			"buildType" : "debug",
+			"output" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/app/src/main/jniLibs/armeabi-v7a/libavfilter-6.so",
+			"toolchain" : "269595090903653908"
+		},
+		"avformat-57-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avformat-57",
+			"buildType" : "debug",
+			"output" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/app/src/main/jniLibs/armeabi-v7a/libavformat-57.so",
+			"toolchain" : "269595090903653908"
+		},
+		"avutil-55-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avutil-55",
+			"buildType" : "debug",
+			"output" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/app/src/main/jniLibs/armeabi-v7a/libavutil-55.so",
+			"toolchain" : "269595090903653908"
+		},
+		"native-lib-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/Users/duanyikang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/duanyikang/AndroidStudioProjects/yichuizi/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/duanyikang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/duanyikang/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp/include -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sources/android/support/include -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so",
+			"toolchain" : "269595090903653908"
+		},
+		"swresample-2-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "swresample-2",
+			"buildType" : "debug",
+			"output" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/app/src/main/jniLibs/armeabi-v7a/libswresample-2.so",
+			"toolchain" : "269595090903653908"
+		},
+		"swscale-4-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "swscale-4",
+			"buildType" : "debug",
+			"output" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/app/src/main/jniLibs/armeabi-v7a/libswscale-4.so",
+			"toolchain" : "269595090903653908"
+		}
+	},
+	"toolchains" : 
+	{
+		"269595090903653908" : 
+		{
+			"cCompilerExecutable" : "/Users/duanyikang/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/duanyikang/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}
