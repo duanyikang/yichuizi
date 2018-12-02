@@ -21,7 +21,7 @@ import org.aspectj.lang.reflect.MethodSignature;
 @Aspect
 public class LoginFilterAspect {
     private static final String TAG = "LoginFilterAspect";
-    // && @annotation(loginFilter)
+
     @Pointcut("execution(@com.yichuizi.loginlibrary.annotation.LoginFilter * *(..))")
     public void loginFilter() {
     }

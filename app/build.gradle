@@ -40,6 +40,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
     implementation project(':baselibrary')
     implementation project(':netlibrary')
+    implementation project(':loglibrary')
     implementation project(':loginlibrary')
 }
 

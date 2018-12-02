@@ -16,6 +16,8 @@ import com.yichuizi.netlibrary.RxHttpUtils;
  */
 
 public class MyApplication extends Application {
+    private boolean islogin = false;//先假装下
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -27,7 +29,7 @@ public class MyApplication extends Application {
      * 初始化AOP登陆
      */
     private void iniLogin() {
-        LoginManager.getInstance().init(this,iLogin);
+        LoginManager.getInstance().init(this, iLogin);
     }
 
     /**
@@ -41,22 +43,29 @@ public class MyApplication extends Application {
                 .setBaseUrl("https://api.douban.com/");
     }
 
-    ILogin iLogin=new ILogin() {
+    ILogin iLogin = new ILogin() {
         @Override
         public void login(Context context, int login) {
-            System.out.println("2222222");
-            startActivity(new Intent(context, LoginActivity.class));
+            switch (login) {
+                case 0:
+                    //普通需要登陆
+                    startActivity(new Intent(context, LoginActivity.class));
+                    break;
+                case 1:
+                    //可能是需要一个对话框
+                    break;
+            }
+            islogin=true;
         }
 
         @Override
         public boolean isLogin(Context context) {
-            System.out.println("1111111");
-            return true;
+            return islogin;
         }
 
         @Override
         public void loginOut(Context context) {
-
+            islogin = false;
         }
     };
 }

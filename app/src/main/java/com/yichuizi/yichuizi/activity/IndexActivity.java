@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-
+//
 import com.yichuizi.loginlibrary.LoginActivity;
 import com.yichuizi.loginlibrary.annotation.LoginFilter;
+import com.yichuizi.loglibrary.LogActivity;
+import com.yichuizi.loglibrary.annotation.LogFilter;
 import com.yichuizi.netlibrary.RxHttpUtils;
 import com.yichuizi.netlibrary.interceptor.Transformer;
 import com.yichuizi.netlibrary.observer.CommonObserver;
@@ -24,19 +26,21 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_index);
     }
 
-    @LoginFilter
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.iv_video:
-                //startActivity(new Intent(IndexActivity.this,VideoPlayActivity.class));
+                startActivity(new Intent(IndexActivity.this,VideoPlayActivity.class));
                 break;
             case R.id.iv_publish:
-                startActivity(new Intent(IndexActivity.this, LoginActivity.class));
-                //getBookData();
+                getBookData();
+                break;
+            case R.id.iv_log:
+                startActivity(new Intent(IndexActivity.this,LogActivity.class));
                 break;
         }
     }
+    @LogFilter(Log = "我去请求接口了")
     @LoginFilter
     private void getBookData() {
         RxHttpUtils
