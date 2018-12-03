@@ -5,10 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 //
-import com.yichuizi.loginlibrary.LoginActivity;
 import com.yichuizi.loginlibrary.annotation.LoginFilter;
 import com.yichuizi.loglibrary.LogActivity;
-import com.yichuizi.loglibrary.annotation.LogFilter;
+import com.yichuizi.loglibrary.annotation.LogAroundFilter;
 import com.yichuizi.netlibrary.RxHttpUtils;
 import com.yichuizi.netlibrary.interceptor.Transformer;
 import com.yichuizi.netlibrary.observer.CommonObserver;
@@ -40,7 +39,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
                 break;
         }
     }
-    @LogFilter(Log = "我去请求接口了")
+    @LogAroundFilter(Log = "我去请求接口了                                                                                                                                                                                                                                       ")
     @LoginFilter
     private void getBookData() {
         RxHttpUtils
