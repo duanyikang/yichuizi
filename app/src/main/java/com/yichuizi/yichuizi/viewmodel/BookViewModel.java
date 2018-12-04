@@ -5,7 +5,6 @@ import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 import android.arch.lifecycle.LiveData;
 
-import com.yichuizi.loginlibrary.annotation.LoginFilter;
 import com.yichuizi.netlibrary.RxHttpUtils;
 import com.yichuizi.netlibrary.interceptor.Transformer;
 import com.yichuizi.netlibrary.observer.CommonObserver;

@@ -11,7 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.yichuizi.loginlibrary.annotation.LoginFilter;
-import com.yichuizi.loglibrary.LogActivity;
 import com.yichuizi.loglibrary.annotation.LogAroundFilter;
 import com.yichuizi.yichuizi.R;
 import com.yichuizi.yichuizi.bean.BookBean;
@@ -32,14 +31,14 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.iv_video:
+            case R.id.bt_video:
                 startActivity(new Intent(IndexActivity.this, VideoPlayActivity.class));
                 break;
-            case R.id.iv_publish:
+            case R.id.bt_net:
                 getBookData();
                 break;
-            case R.id.iv_log:
-                startActivity(new Intent(IndexActivity.this, LogActivity.class));
+            case R.id.bt_recyclerview:
+                startActivity(new Intent(IndexActivity.this, RecyclerActivity.class));
                 break;
         }
     }
