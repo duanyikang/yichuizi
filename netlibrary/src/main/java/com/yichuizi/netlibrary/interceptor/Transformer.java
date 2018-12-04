@@ -70,4 +70,28 @@ public class Transformer {
         };
     }
 
+
+    /**
+     * @param <T>    泛型
+     * @return 返回Observable
+     */
+    public static <T> ObservableTransformer<T, T> switchSchedulersSyn() {
+        return new ObservableTransformer<T, T>() {
+            @Override
+            public ObservableSource<T> apply(@NonNull Observable<T> upstream) {
+                return upstream
+                        .subscribeOn(Schedulers.io())
+                        .unsubscribeOn(Schedulers.io())
+                        .doOnSubscribe(new Consumer<Disposable>() {
+                            @Override
+                            public void accept(@NonNull Disposable disposable) throws Exception {
+
+                            }
+                        })
+                        .subscribeOn(Schedulers.io())
+                        .observeOn(Schedulers.io());
+            }
+        };
+    }
+
 }

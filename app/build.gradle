@@ -42,6 +42,9 @@ dependencies {
     implementation project(':netlibrary')
     implementation project(':loglibrary')
     implementation project(':loginlibrary')
+
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
 }
 
 import org.aspectj.bridge.IMessage

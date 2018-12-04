@@ -37,3 +37,7 @@
 77	134	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libpkginfo-lib.so	1112700e99da5c9e
 0	71	0	CMakeFiles/pkginfo-lib.dir/src/main/cpp/pkginfo.cpp.o	48cadc6dfc0800bf
 71	114	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libpkginfo-lib.so	1112700e99da5c9e
+0	163	0	CMakeFiles/pkginfo-lib.dir/src/main/cpp/pkginfo.cpp.o	48cadc6dfc0800bf
+163	251	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libpkginfo-lib.so	1112700e99da5c9e
+0	76	0	CMakeFiles/pkginfo-lib.dir/src/main/cpp/pkginfo.cpp.o	48cadc6dfc0800bf
+77	126	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libpkginfo-lib.so	1112700e99da5c9e
