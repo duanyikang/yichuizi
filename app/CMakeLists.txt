@@ -5,7 +5,8 @@ find_library( log-lib
 
 add_library( native-lib
              SHARED
-             src/main/cpp/native-lib.cpp )
+        src/main/cpp/player.cpp
+        src/main/cpp/publisher.cpp)
 
 add_library( avcodec-57
              SHARED

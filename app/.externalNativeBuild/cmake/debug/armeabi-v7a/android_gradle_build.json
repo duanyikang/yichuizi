@@ -51,7 +51,13 @@
 				
 				{
 					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/duanyikang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/duanyikang/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp/include -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sources/android/support/include -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O0 -fno-limit-debug-info  -fPIC    -c ",
-					"src" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/app/src/main/cpp/native-lib.cpp",
+					"src" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/app/src/main/cpp/player.cpp",
+					"workingDirectory" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/duanyikang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/duanyikang/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp/include -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sources/android/support/include -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /Users/duanyikang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/app/src/main/cpp/publisher.cpp",
 					"workingDirectory" : "/Users/duanyikang/AndroidStudioProjects/yichuizi/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
 				}
 			],

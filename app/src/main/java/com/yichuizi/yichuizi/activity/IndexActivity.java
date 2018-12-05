@@ -34,6 +34,10 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
             case R.id.bt_video:
                 startActivity(new Intent(IndexActivity.this, VideoPlayActivity.class));
                 break;
+            case R.id.bt_publish:
+                startActivity(new Intent(IndexActivity.this, PublishActivity.class));
+                break;
+
             case R.id.bt_net:
                 getBookData();
                 break;

@@ -2,6 +2,7 @@ package com.yichuizi.yichuizi.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.LinearSnapHelper;
@@ -34,5 +35,14 @@ public class RecyclerActivity extends Activity {
         snapHelper.attachToRecyclerView(mRecyclerView);
 //        LinearSnapHelper snapHelper = new LinearSnapHelper();
 //        snapHelper.attachToRecyclerView(mRecyclerView);
+
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("666666666666666");
+            }
+        },10000000);
+
     }
 }
