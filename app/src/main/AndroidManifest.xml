@@ -36,6 +36,7 @@
             android:theme="@style/AppTheme.SplashActivity" />
         <activity android:name=".activity.RecyclerActivity" />
         <activity android:name=".activity.PublishActivity" />
+        <activity android:name=".activity.ChatActivity" />
     </application>
 
 </manifest>

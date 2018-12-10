@@ -35,7 +35,6 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
         r = r.length() == 1 ? "0" + r : r;
         g = g.length() == 1 ? "0" + g : g;
         b = b.length() == 1 ? "0" + b : b;
-
         holder.mImageView.setBackgroundColor(Color.parseColor("#" + r + g + b));
     }
 
@@ -51,6 +50,7 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
         public MainHolder(View itemView) {
             super(itemView);
             mImageView = itemView.findViewById(R.id.iv_bg);
+
         }
     }
 }

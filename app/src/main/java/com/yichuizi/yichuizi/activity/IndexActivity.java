@@ -44,6 +44,9 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
             case R.id.bt_recyclerview:
                 startActivity(new Intent(IndexActivity.this, RecyclerActivity.class));
                 break;
+            case R.id.bt_chatroom:
+                startActivity(new Intent(IndexActivity.this, ChatActivity.class));
+                break;
         }
     }
     @LogAroundFilter(Log = "我点击请求接口了")
