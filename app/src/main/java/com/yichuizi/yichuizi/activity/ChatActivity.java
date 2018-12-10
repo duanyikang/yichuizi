@@ -1,6 +1,7 @@
 package com.yichuizi.yichuizi.activity;
 
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -32,7 +33,7 @@ public class ChatActivity extends Activity {
         initView();
         System.out.println("我要的");
         Chat.initNet();
-        Chat.initNickName("小霸王");
+        Chat.initNickName("用户"+Build.MODEL);
         Chat.setCallBack(new ReceiveMessage() {
             @Override
             public void call(final String s) {
@@ -64,7 +65,7 @@ public class ChatActivity extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        //Chat.close();
+        Chat.close();
         handler.removeCallbacksAndMessages(null);
     }
 }
