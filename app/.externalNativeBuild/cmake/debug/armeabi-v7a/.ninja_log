@@ -11,3 +11,15 @@
 2	413	0	CMakeFiles/native-lib.dir/src/main/cpp/publisher.cpp.o	53a34218e70c3b54
 1	413	0	CMakeFiles/native-lib.dir/src/main/cpp/player.cpp.o	4a2dcc935d2c6b8b
 413	458	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	344bcb599900d588
+2	159	0	CMakeFiles/native-lib.dir/src/main/cpp/watertext.cpp.o	e44d929570f84463
+1	435	0	CMakeFiles/native-lib.dir/src/main/cpp/player.cpp.o	4a2dcc935d2c6b8b
+2	440	0	CMakeFiles/native-lib.dir/src/main/cpp/publisher.cpp.o	53a34218e70c3b54
+440	514	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	344bcb599900d588
+2	62	0	CMakeFiles/native-lib.dir/src/main/cpp/watertext.cpp.o	e44d929570f84463
+1	316	0	CMakeFiles/native-lib.dir/src/main/cpp/player.cpp.o	4a2dcc935d2c6b8b
+1	319	0	CMakeFiles/native-lib.dir/src/main/cpp/publisher.cpp.o	53a34218e70c3b54
+319	353	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	344bcb599900d588
+3	206	0	CMakeFiles/native-lib.dir/src/main/cpp/watertext.cpp.o	e44d929570f84463
+2	513	0	CMakeFiles/native-lib.dir/src/main/cpp/player.cpp.o	4a2dcc935d2c6b8b
+2	519	0	CMakeFiles/native-lib.dir/src/main/cpp/publisher.cpp.o	53a34218e70c3b54
+519	584	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	344bcb599900d588

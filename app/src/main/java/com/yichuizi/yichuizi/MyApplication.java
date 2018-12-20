@@ -4,10 +4,13 @@ import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 
+import com.yichuizi.hooklibrary.Hooker;
 import com.yichuizi.loginlibrary.LoginActivity;
 import com.yichuizi.loginlibrary.core.ILogin;
 import com.yichuizi.loginlibrary.core.LoginManager;
 import com.yichuizi.netlibrary.RxHttpUtils;
+
+import java.lang.reflect.InvocationTargetException;
 
 /**
  * 作者： duanyikang on 2018/9/21.
@@ -23,6 +26,19 @@ public class MyApplication extends Application {
         super.onCreate();
         iniLogin();
         iniNet();
+        try {
+            Hooker.hookInstrumentation();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        }
     }
 
     /**

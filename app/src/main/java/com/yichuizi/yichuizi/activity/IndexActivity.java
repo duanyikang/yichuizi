@@ -16,8 +16,6 @@ import com.yichuizi.yichuizi.R;
 import com.yichuizi.yichuizi.bean.BookBean;
 import com.yichuizi.yichuizi.viewmodel.BookViewModel;
 
-
-
 public class IndexActivity extends AppCompatActivity implements View.OnClickListener {
     private BookViewModel mBookViewModel;
 
@@ -46,6 +44,9 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.bt_chatroom:
                 startActivity(new Intent(IndexActivity.this, ChatActivity.class));
+                break;
+            case R.id.bt_flex:
+                startActivity(new Intent(IndexActivity.this, LayoutAnimationActivity.class));
                 break;
         }
     }

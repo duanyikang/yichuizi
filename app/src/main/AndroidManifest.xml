@@ -37,6 +37,9 @@
         <activity android:name=".activity.RecyclerActivity" />
         <activity android:name=".activity.PublishActivity" />
         <activity android:name=".activity.ChatActivity" />
+        <activity android:name=".activity.FlexboxActivity" />
+        <activity android:name=".activity.MFWActivity" />
+        <activity android:name=".activity.LayoutAnimationActivity" />
     </application>
 
 </manifest>

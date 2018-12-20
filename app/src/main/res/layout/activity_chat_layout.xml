@@ -22,4 +22,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right|bottom"
         android:text="发送" />
+
 </FrameLayout>
