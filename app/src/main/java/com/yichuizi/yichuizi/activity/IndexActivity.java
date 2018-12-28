@@ -48,6 +48,9 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
             case R.id.bt_flex:
                 startActivity(new Intent(IndexActivity.this, LayoutAnimationActivity.class));
                 break;
+            case R.id.bt_mediacodec:
+                startActivity(new Intent(IndexActivity.this, MediaCodecActivity.class));
+                break;
         }
     }
     @LogAroundFilter(Log = "我点击请求接口了")

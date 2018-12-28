@@ -89,6 +89,11 @@ public class MFWRecyclerView extends RecyclerView {
         @NonNull
         @Override
         public MyHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             return new MyHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout, parent, false));
         }
 
