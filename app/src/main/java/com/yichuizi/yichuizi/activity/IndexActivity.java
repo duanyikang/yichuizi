@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import android.view.View;
 
+import com.yichuizi.audiolibrary.TomCatActivity;
 import com.yichuizi.loginlibrary.annotation.LoginFilter;
 import com.yichuizi.loglibrary.annotation.LogAroundFilter;
 import com.yichuizi.yichuizi.R;
@@ -51,16 +52,20 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
             case R.id.bt_mediacodec:
                 startActivity(new Intent(IndexActivity.this, MediaCodecActivity.class));
                 break;
+            case R.id.bt_tomcat:
+                startActivity(new Intent(IndexActivity.this, TomCatActivity.class));
+                break;
         }
     }
+
     @LogAroundFilter(Log = "我点击请求接口了")
     @LoginFilter
     private void getBookData() {
         mBookViewModel.getBookData().observe(this, new Observer<BookBean>() {
             @Override
             public void onChanged(@Nullable BookBean bookBean) {
-                if(bookBean!=null){
-                    System.out.println("我要的:"+bookBean.getSummary());
+                if (bookBean != null) {
+                    System.out.println("我要的:" + bookBean.getSummary());
                 }
             }
         });

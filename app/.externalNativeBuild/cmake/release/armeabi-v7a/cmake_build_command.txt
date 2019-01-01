@@ -1,15 +1,15 @@
-Executable : /Users/duanyikang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake
+Executable : /Users/duanyikang/Library/Andorids/sdk/cmake/3.6.4111459/bin/cmake
 arguments : 
--H/Users/duanyikang/AndroidStudioProjects/yichuizi/app
--B/Users/duanyikang/AndroidStudioProjects/yichuizi/app/.externalNativeBuild/cmake/release/armeabi-v7a
+-H/Users/duanyikang/MyGit/yichuizi/app
+-B/Users/duanyikang/MyGit/yichuizi/app/.externalNativeBuild/cmake/release/armeabi-v7a
 -DANDROID_ABI=armeabi-v7a
--DANDROID_PLATFORM=android-15
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/duanyikang/AndroidStudioProjects/yichuizi/app/build/intermediates/cmake/release/obj/armeabi-v7a
+-DANDROID_PLATFORM=android-16
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/duanyikang/MyGit/yichuizi/app/build/intermediates/cmake/release/obj/armeabi-v7a
 -DCMAKE_BUILD_TYPE=Release
--DANDROID_NDK=/Users/duanyikang/Library/Android/sdk/ndk-bundle
+-DANDROID_NDK=/Users/duanyikang/Library/android-ndk-r14b
 -DCMAKE_CXX_FLAGS=
--DCMAKE_TOOLCHAIN_FILE=/Users/duanyikang/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake
--DCMAKE_MAKE_PROGRAM=/Users/duanyikang/Library/Android/sdk/cmake/3.6.4111459/bin/ninja
+-DCMAKE_TOOLCHAIN_FILE=/Users/duanyikang/Library/android-ndk-r14b/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/duanyikang/Library/Andorids/sdk/cmake/3.6.4111459/bin/ninja
 -GAndroid Gradle - Ninja
 jvmArgs : 
 

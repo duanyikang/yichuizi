@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yichuizi.audiolibrary" >
+
+    <application>
+        <activity android:name=".TomCatActivity" />
+        <service android:name=".AudioRecordService" />
+    </application>
+</manifest>

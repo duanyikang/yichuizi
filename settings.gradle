@@ -1,1 +1,1 @@
-include ':app', ':baselibrary', ':netlibrary', ':loginlibrary', ':loglibrary', ':chatlibrary', ':hooklibrary'
+include ':app', ':baselibrary', ':netlibrary', ':loginlibrary', ':loglibrary', ':chatlibrary', ':hooklibrary', ':audiolibrary'

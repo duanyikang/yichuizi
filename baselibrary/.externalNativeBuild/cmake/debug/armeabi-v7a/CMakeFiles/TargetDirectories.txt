@@ -1,3 +1,3 @@
-/Users/duanyikang/AndroidStudioProjects/yichuizi/baselibrary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
-/Users/duanyikang/AndroidStudioProjects/yichuizi/baselibrary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
-/Users/duanyikang/AndroidStudioProjects/yichuizi/baselibrary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/pkginfo-lib.dir
+/Users/duanyikang/MyGit/yichuizi/baselibrary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/duanyikang/MyGit/yichuizi/baselibrary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/duanyikang/MyGit/yichuizi/baselibrary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/pkginfo-lib.dir
