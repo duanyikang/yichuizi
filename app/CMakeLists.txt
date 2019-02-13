@@ -7,7 +7,8 @@ add_library(native-lib
         SHARED
         src/main/cpp/player.cpp
         src/main/cpp/publisher.cpp
-        src/main/cpp/watertext.cpp)
+        src/main/cpp/watertext.cpp
+        src/main/cpp/changevoice.cpp)
 
 add_library(avcodec-57
         SHARED
@@ -51,6 +52,20 @@ set_target_properties(swscale-4
         PROPERTIES IMPORTED_LOCATION
         ${CMAKE_SOURCE_DIR}/src/main/jniLibs/${ANDROID_ABI}/libswscale-4.so)
 
+add_library(fmd
+        SHARED
+        IMPORTED)
+set_target_properties(fmd
+        PROPERTIES IMPORTED_LOCATION
+        ${CMAKE_SOURCE_DIR}/src/main/jniLibs/${ANDROID_ABI}/libfmod.so)
+
+add_library(fmdL
+        SHARED
+        IMPORTED)
+set_target_properties(fmdL
+        PROPERTIES IMPORTED_LOCATION
+        ${CMAKE_SOURCE_DIR}/src/main/jniLibs/${ANDROID_ABI}/libfmodL.so)
+
 include_directories(src/main/cpp/include)
 
 target_link_libraries(native-lib
@@ -60,5 +75,7 @@ target_link_libraries(native-lib
         avutil-55
         swresample-2
         swscale-4
+        fmd
+        fmdL
         log
         android)

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">一锤子</string>
     <string name="main_tv_audience">观众</string>
+    <string name="behavior_sample_title">com.yichuizi.yichuizi.view.Mybehavior</string>
 </resources>

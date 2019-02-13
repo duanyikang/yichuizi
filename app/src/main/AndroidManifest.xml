@@ -45,6 +45,7 @@
         <activity android:name=".activity.MFWActivity" />
         <activity android:name=".activity.LayoutAnimationActivity" />
         <activity android:name=".activity.MediaCodecActivity" />
+        <activity android:name=".activity.ChangeVoiceActivity" />
     </application>
 
 </manifest>

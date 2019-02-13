@@ -3,77 +3,45 @@ package com.yichuizi.yichuizi.activity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.view.MotionEvent;
+import android.support.v4.widget.NestedScrollView;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 
 import com.yichuizi.yichuizi.R;
-import com.yichuizi.yichuizi.view.MFWRecyclerView;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import io.reactivex.Observable;
-import io.reactivex.ObservableEmitter;
-import io.reactivex.ObservableOnSubscribe;
-import io.reactivex.Observer;
-import io.reactivex.disposables.Disposable;
+import com.yichuizi.yichuizi.adapter.MfwAdapter;
 
 /**
  * 作者： duanyikang on 2018/12/17.
  * 描述：
  */
 public class MFWActivity extends Activity {
-    private MFWRecyclerView mfwRecyclerView;
-    private List<String> mdata = new ArrayList<>();
+
+    private RecyclerView recycler1;
+    private RecyclerView recycler2;
+    private MfwAdapter mfwAdapter1, mfwAdapter2;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mfw_layout);
-        mfwRecyclerView = findViewById(R.id.mfwrecycler);
-        for (int i = 0; i < 50; i++) {
-            mdata.add(String.valueOf(i));
-        }
-        mfwRecyclerView.setData(mdata);
+        initView();
     }
 
-    private void learn(){
-        //map<给你1，还给你2>
-        //concat<Observable1(先读下缓存)如果缓存有，直接发射出来如果没有，则e.onComplete()，Observable2(请求网络)>
-          //感觉就是串联起来，
+    private void initView() {
+       recycler1 =findViewById(R.id.my_list);
+        recycler2 =findViewById(R.id.recycler2);
 
-        //flatMap<>
-        //zip 合并多个Obersvale
-        //interval
-        Observable.create(new ObservableOnSubscribe<Integer>() {
-            @Override
-            public void subscribe(ObservableEmitter<Integer> emitter) {
+        recycler1.setNestedScrollingEnabled(true);
 
-            }
-        }).subscribe(new Observer<Integer>() {
-            @Override
-            public void onSubscribe(Disposable d) {
 
-            }
 
-            @Override
-            public void onNext(Integer integer) {
+       recycler1.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
+       recycler2.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
+        mfwAdapter1=new MfwAdapter();
+        mfwAdapter2=new MfwAdapter();
+        recycler1.setAdapter(mfwAdapter1);
 
-            }
+       recycler2.setAdapter(mfwAdapter2);
 
-            @Override
-            public void onError(Throwable e) {
-
-            }
-
-            @Override
-            public void onComplete() {
-
-            }
-        });
-    }
-
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        return super.onTouchEvent(event);
     }
 }

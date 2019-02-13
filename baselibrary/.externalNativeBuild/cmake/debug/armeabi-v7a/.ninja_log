@@ -1,3 +1,7 @@
 # ninja log v5
-0	436	0	CMakeFiles/pkginfo-lib.dir/src/main/cpp/pkginfo.cpp.o	f6be130cf02ab7df
-437	561	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libpkginfo-lib.so	56b39e764f1b4664
+1	82	0	CMakeFiles/pkginfo-lib.dir/src/main/cpp/pkginfo.cpp.o	48cadc6dfc0800bf
+82	135	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libpkginfo-lib.so	1112700e99da5c9e
+0	83	0	CMakeFiles/pkginfo-lib.dir/src/main/cpp/pkginfo.cpp.o	48cadc6dfc0800bf
+83	144	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libpkginfo-lib.so	1112700e99da5c9e
+1	254	0	CMakeFiles/pkginfo-lib.dir/src/main/cpp/pkginfo.cpp.o	48cadc6dfc0800bf
+254	338	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libpkginfo-lib.so	1112700e99da5c9e

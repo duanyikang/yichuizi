@@ -5,6 +5,7 @@ import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Debug;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
@@ -13,8 +14,11 @@ import android.view.View;
 import com.yichuizi.audiolibrary.TomCatActivity;
 import com.yichuizi.loginlibrary.annotation.LoginFilter;
 import com.yichuizi.loglibrary.annotation.LogAroundFilter;
+import com.yichuizi.videolibrary.SuperVideoActivity;
+import com.yichuizi.videolibrary.opengl.OpenGLActivity;
 import com.yichuizi.yichuizi.R;
 import com.yichuizi.yichuizi.bean.BookBean;
+import com.yichuizi.yichuizi.nativeclass.ChangeVoice;
 import com.yichuizi.yichuizi.viewmodel.BookViewModel;
 
 public class IndexActivity extends AppCompatActivity implements View.OnClickListener {
@@ -23,6 +27,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Debug.startMethodTracing("guoguo");
         mBookViewModel = ViewModelProviders.of(this).get(BookViewModel.class);
         setContentView(R.layout.activity_index);
     }
@@ -55,6 +60,15 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
             case R.id.bt_tomcat:
                 startActivity(new Intent(IndexActivity.this, TomCatActivity.class));
                 break;
+            case R.id.bt_changevoice:
+                startActivity(new Intent(IndexActivity.this, ChangeVoiceActivity.class));
+                break;
+            case R.id.bt_gl:
+                startActivity(new Intent(IndexActivity.this, OpenGLActivity.class));
+                break;
+            case R.id.bt_supervideo:
+                startActivity(new Intent(IndexActivity.this, MFWActivity.class));
+                break;
         }
     }
 
@@ -71,4 +85,9 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         });
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Debug.stopMethodTracing();
+    }
 }
